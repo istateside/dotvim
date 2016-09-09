@@ -37,6 +37,9 @@ set hlsearch
 nnoremap <leader>a :Ack
 nnoremap <leader><space> :noh<cr>
 
+" remap ESC to jj for easier use
+inoremap jj <Esc>
+
 " handle long lines correctly
 set wrap
 set textwidth=79
