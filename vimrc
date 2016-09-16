@@ -72,8 +72,12 @@ let g:NERDDefaultAlign = 'left'
 " vim-move settings
 let g:move_key_modifier = 'C'
 
+" ignore files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set wildignore+=*/node_modules/*,*/bower_components/*
+
+" ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 set hidden " allows switching buffers without saving.
 
